@@ -1,0 +1,85 @@
+---
+layout: default
+title: Static Database
+---
+Hoffmann, K., Berg, S., & Koufogiannakis, D. (2019). Factors encouraging research productivity for academic librarians - survey instrument and data [Data file]. Retrieved from <a href=https://dataverse.library.ualberta.ca/dataset.xhtml?persistentId=doi:10.7939/DVN/JPBC81>UofA Dataverse</a>
+<br><br>
+
+<h3><strong>Number of peer reviewed articles published from respondents from each Canadian alma mater.</strong></h3>
+
+<table style="width:100%">
+ <tr>
+   <th>Alma mater</th>
+   <th>PR Articles published</th>
+   <th>Total</th>
+ </tr>
+ <tr>
+   <td>University of Alberta</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "University of Alberta" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>Dalhousie </td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "Dalhousie University" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>University of British Columbia</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "University of British Columbia" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>McGill University</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "McGill University" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>University of Toronto</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "University of Toronto" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>Western University</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "Western University" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>Universite de Montreal</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "Universite de Montreal" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+ <tr>
+   <td>University of Ottawa</td>
+   <td>{% for libs in site.data.librarians %}
+     {% if libs.MLS_Inst == "University of Ottawa" and libs.PR_Journal >=1 %}
+   +{{ libs.PR_Journal }}
+ {% endif %}
+{% endfor %}</td>
+ </tr>
+</table>
+<br><br>
+<h3>Task</h3>
+<p>Modify the code above to reflect respondents who have published in peer reviewed journals and <i>also</i> enjoy chatting with colleagues about their research (This aspect is coded under PT_EnjoyChatting = 1)</p>
+<p><strong>Or</strong></p>
+<p>Figure out how to total the above responses (HINT: [CurlyBracket][CurlyBracket] site.data.librarians | jsonify [CurlyBracket][CurlyBracket] will turn the _data/librarians.yaml file into into JSON, which may be easier to work with in JavaScript).

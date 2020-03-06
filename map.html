@@ -1,0 +1,11 @@
+---
+layout: default
+title: Map
+---
+<h1>Fave Places in Edmonton</h1>
+<h3>Task</h3>
+<p>Try adding another favorite place to the map by copying and pasting the code in _data/places.yaml</p>
+
+<p>Click <a href="https://github.com/ayastreb/jekyll-maps">here</a> for the github repo of this plugin, and <a href="https://ayastreb.me/jekyll-maps/">here</a> for its website.</p>
+
+<div id="map-canvas" style="width:100%; height:650px">{% google_map zoom="10" src="_data/places.yml" %}</div>

@@ -1,0 +1,12 @@
+---
+  - title: "Khazana"
+    url: "http://www.khazanarestaurant.ca/"
+    location:
+      latitude: 53.542650
+      longitude: -113.504270
+
+  - title: "NAIT"
+    url: "https://nait.ca"
+    location:
+      latitude: 53.567940
+      longitude: -113.504448

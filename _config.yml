@@ -32,7 +32,7 @@ destination: public
 
 maps:
   google:
-    api_key: AIzaSyD7iSxI4UmGCweZ-MU0GgsS5mFRSMCJt38
+    api_key: AIzaSyDZYVKTKu9Pb3PhOyQelxjUI9pm_OcnH94
 
 # Build settings
 theme: jekyll-theme-minimal

@@ -9,3 +9,5 @@ layout: default
 ## [Static database]({% link staticdb.html %})
 
 ## [Helpful links]({% link helpful.md %})
+
+## [Jkan](https://jkan.io/)
